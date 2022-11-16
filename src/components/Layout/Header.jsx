@@ -1,87 +1,44 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import {FaSearch} from 'react-icons/fa'
+
 const Header = () => {
   return (
-    <div className="header-section">
-      <Navbar className='' expand="lg">
-        <Container fluid>
-          <Navbar.Brand href="#" className= 'd-flex'><img src="assets/nft.png" alt="" width={30} />
-              <span className='mx-3 vertical-border'></span>
-               <span className='text-white'>NFT</span></Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
-              <Form className="d-flex">
-                <FaSearch className='fa-icon' />
-                <Form.Control
-                  type="search"
-                  placeholder="Search"
-                  className="me-2"
-                  aria-label="Search"
-                />
-              </Form>
-          <Navbar.Collapse id="navbarScroll" className=''>
-            <Nav
-              className="amy-2 my-lg-0"
-              style={{ maxHeight: '100px' }}
-              navbarScroll
-            >
-              <Nav.Link href="#action1" className='txt-clr'>Marketplace</Nav.Link>
-              <Nav.Link href="#action2">Drops</Nav.Link>
-              <NavDropdown title="Brands" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Philadelphia 76ers</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Aston Martin F1
-                </NavDropdown.Item>
-                {/* <NavDropdown.Divider /> */}
-                <NavDropdown.Item href="#action5">
-                  Lega Serie A
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action6">
-                  DRESSX
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action7">
-                  Heavy Metal
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action8">
-                  LA Kings
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action9">
-                  Paris Saint-Germain
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action10">
-                  UFC
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action11">
-                  Angel City FC
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action12">
-                  Crypto.com
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action13">
-                  DeFi The Game
-                </NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link href="#" disabled>
-                Link
-              </Nav.Link>
-            </Nav>
-            <Button className="btn btn-create text-white">Create</Button>
-              <span className='vertical-border'></span>
-              <Nav.Link href="#action14">Sign In</Nav.Link>
-              <Nav.Link href="#action15">Sign Up</Nav.Link>
-              <span className='vertical-border'></span>
-              <span className="language">
-                <a href='/' className="text-decoration-none ">English</a>
-              </span>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+    <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+  <div className="container-fluid">
+    <a className="navbar-brand text-white" href="/">RelymerLabs</a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon" />
+    </button>
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <li className="nav-item">
+          <a className="nav-link active text-white" aria-current="page" href="/">Home</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link text-white" href="/">Link</a>
+        </li>
+        <li className="nav-item dropdown">
+          <a className="nav-link dropdown-toggle text-white" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a className="dropdown-item" href="/">Action</a></li>
+            <li><a className="dropdown-item" href="/">Another action</a></li>
+            <li><hr className="dropdown-divider" /></li>
+            <li><a className="dropdown-item" href="/">Something else here</a></li>
+          </ul>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link text-white" href="/">Disabled</a>
+        </li>
+      </ul>
+      <form className="d-flex">
+        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <button className="btn btn-outline-success text-white" type="submit">Search</button>
+      </form>
     </div>
+  </div>
+</nav>
+
   )
 }
 
