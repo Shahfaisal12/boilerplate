@@ -1,7 +1,7 @@
 
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import RoutesPage from './components/routesPage/RoutesPage'
+import RoutesPage from './pages/routesPage/RoutesPage.jsx'
 
 function App() {
   return (
