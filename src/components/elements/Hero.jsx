@@ -7,6 +7,9 @@ const Hero = () => {
     <div className='container'>
             <div className="row">
                 <div className="text-center">
+                <h1 className="text-9xl font-bold underline text-red-500" >
+      Hello world!
+    </h1>
                     <h1 className="fw-bold">Home Page</h1>
                     <h6>Please Login if you have already account, otherwise register your self</h6>
                     <Link to='/login'><Button className="fw-bold">Login</Button></Link> / <Link to='/register'><Button className="fw-bold">Register</Button></Link>
